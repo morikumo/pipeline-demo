@@ -36,8 +36,8 @@ jobs:
         working-directory: app
         run: npm run test:ci
 
-      - name: Debug arborescence
-        run: find . -name "lcov.info" 2>/dev/null || echo "❌ Aucun lcov.info trouvé"
+      - name: Vérifier le rapport de couverture
+        run: ls -la coverage/lcov.info
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
