@@ -36,8 +36,17 @@ jobs:
         working-directory: app
         run: npm run test:ci
 
-      - name: Vérifier le rapport de couverture
-        run: ls -la coverage/lcov.info
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
+
+      - name: Download coverage report
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-report
+          path: coverage/
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
