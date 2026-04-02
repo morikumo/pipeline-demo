@@ -38,10 +38,7 @@ jobs:
 
       - name: Déplacer le rapport coverage à la racine
         run: mv app/coverage ./coverage
-
-      - name: Debug coverage
-        run: ls -la coverage/
-
+        
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

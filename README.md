@@ -10,9 +10,7 @@ Un pipeline CI/CD complet, conçu avec **GitHub Actions**, **Docker**, **SonarCl
 
 ## 🌐 Demo
 
-> [https://pipeline-demo-xxxx.onrender.com](https://pipeline-demo-xxxx.onrender.com)
-
-*(Remplace l'URL par la tienne après le premier déploiement Render)*
+> ([https://pipeline-demo.onrender.com](https://pipeline-demo.onrender.com))
 
 ---
 
