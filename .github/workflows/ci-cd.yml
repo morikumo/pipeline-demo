@@ -37,7 +37,7 @@ jobs:
         run: npm run test:ci
 
       - name: Vérifier le rapport de couverture
-        run: ls -la app/coverage/ || echo "❌ Dossier coverage introuvable"
+        run: ls -la app/coverage/
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
