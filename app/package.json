@@ -7,7 +7,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "jest --coverage",
-    "test:ci": "jest --coverage --coverageReporters=lcov"
+    "test:ci": "jest --coverage --coverageReporters=lcov --coverageDirectory=./coverage"
   },
   "keywords": ["devops", "cicd", "docker", "devsecops"],
   "author": "",
